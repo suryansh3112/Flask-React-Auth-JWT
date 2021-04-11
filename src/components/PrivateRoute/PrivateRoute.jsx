@@ -47,10 +47,10 @@ function PrivateRoute() {
     <div>
       <h1>Your Personal Information</h1>
       {info && <ul>
-        <li>{info.first_name}</li>
-        <li>{info.last_name}</li>
-        <li>{info.email}</li>
-        <li>{info.phone}</li>
+        <li><h3>{info.first_name}</h3></li>
+        <li><h3>{info.last_name}</h3></li>
+        <li><h3>{info.email}</h3></li>
+        <li><h3>{info.phone}</h3></li>
       </ul>}
 
       <h1>Some Hidden Information only for Logged in users</h1>

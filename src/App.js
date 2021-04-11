@@ -40,7 +40,7 @@ function App() {
     func();
   },[])
 
-  //Checks for token expiry . And after token expires, it logout the user. 
+  //Checks for token expiry after every minute . And after token expires, it logout the user. 
   useEffect(()=>{
     if(userData.auth){
       let interval = setInterval(() => {
@@ -55,7 +55,7 @@ function App() {
             localStorage.removeItem('auth-token')
           }
         
-      }, 5000);
+      }, 60000);
       setTimer(interval)
     }else{
       clearInterval(timer);

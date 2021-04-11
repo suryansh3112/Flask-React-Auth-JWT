@@ -71,7 +71,7 @@ def login():
 
     if user.verify_password(data['password']):
         access_token = create_access_token(
-            identity=user.email, expires_delta=datetime.timedelta(seconds=15))
+            identity=user.email, expires_delta=datetime.timedelta(minutes=5))
         return jsonify({'access_token': access_token, "user": user.email}), 200
     else:
         return jsonify({'message': "Wrong credentials"}), 400
