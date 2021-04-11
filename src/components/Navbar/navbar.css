@@ -1,0 +1,27 @@
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 3px 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 74rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.nav-item {
+  padding: 8px;
+}
+
+.active {
+  border-bottom: 2px solid blue;
+}
+
+.right-nav {
+  display: flex;
+}
